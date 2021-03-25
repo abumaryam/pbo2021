@@ -1,27 +1,27 @@
 <?php
-    require_once("User.php");
 
-    class Pegawai extends User
+class Pegawai extends User
+{
+    public $nip;
+    private $nama;
+    public $no_hp;
+    public $gaji_pokok;
+
+    function __construct($nip, $nama, $hp, $gaji)
     {
-        public $nip;
-        private $nama;
-        public $no_hp;
-        public $gaji_pokok;
-
-        function __construct($nip, $nama, $hp, $gaji){
-            $this->nip = $nip;
-            $this->nama = $nama;
-            $this->no_hp = $hp;
-            $this->gaji_pokok = $gaji;
-        }
-
-        public function tampilkanGaji(){
-            echo "Jumlah Gaji : $this->gaji_pokok";
-        }
-
-        public function getNama()
-        {
-            return $this->nama;
-        }
+        $this->nip = $nip;
+        $this->nama = $nama;
+        $this->no_hp = $hp;
+        $this->gaji_pokok = $gaji;
     }
-?>
+
+    public function tampilkanGaji()
+    {
+        echo "Jumlah Gaji : $this->gaji_pokok";
+    }
+
+    public function getNama()
+    {
+        return $this->nama;
+    }
+}

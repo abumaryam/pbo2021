@@ -1,5 +1,4 @@
 <?php
-require_once("User.php");
 
 class Mahasiswa extends User
 {

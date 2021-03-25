@@ -1,5 +1,4 @@
 <?php
-require_once("Pegawai.php");
 
 class Dosen extends Pegawai
 {

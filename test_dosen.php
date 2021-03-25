@@ -10,3 +10,5 @@ $dian->meneliti();
 
 $lita = new Mahasiswa('H1101191058', 'Lita Novitasari', '01-01-1965', 'P');
 $lita->tampilkanAngkatan();
+
+$tanggal = new MyDate();
