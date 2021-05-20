@@ -1,5 +1,8 @@
 <?php
-class Mobil  
+
+namespace App;
+
+class Mobil
 {
     public $roda;
     public $kursi;

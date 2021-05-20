@@ -1,6 +1,8 @@
 <?php
 
-class StringMutator  
+namespace App;
+
+class StringMutator
 {
     protected $word;
 
@@ -11,7 +13,7 @@ class StringMutator
 
     public function bold()
     {
-        $this->word = '<b>'.$this->word.'</b>';
+        $this->word = '<b>' . $this->word . '</b>';
         return $this;
     }
 

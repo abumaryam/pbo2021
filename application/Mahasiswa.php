@@ -1,11 +1,16 @@
 <?php
 
+namespace App;
+
 class Mahasiswa extends User
 {
     public $nim;
     public $nama;
     public $tanggal_lahir;
     public $jenis_kelamin;
+    const AKTIF = 1;
+    const NON_AKTIF = 0;
+    public static $status = self::AKTIF;
 
     function __construct($nim, $nama, $tgl, $jk)
     {
@@ -33,4 +38,21 @@ class Mahasiswa extends User
     {
         echo $this->nama;
     }
+
+    public static function bergerak()
+    {
+        echo "agen solusi, bukan agen perubahan<br/>";
+    }
+
+    final public function tuntaskan()
+    {
+        self::bergerak();
+        echo "memperbaiki menjadi lebih baik";
+    }
+
+    // buat fungsi dengan nama hitungSks yang tipenya adalah static
+    /**
+     * Parameter dari fungsi tersebut adalah $sks, dan $bobot
+     * 
+     */
 }
